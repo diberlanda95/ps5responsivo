@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <title>PS5</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="imagens/logo.png" class="logo">
+            <nav>
+                <ul id="menu">
+                    <li><a href="">Controles</a></li>
+                    <li><a href="">VR Acessorios</a></li>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </nav>
+            <img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS5 V2<br> Dualshock 4</h2>
+                <h3>Controle sem fio para PS5</h3>
+                <p>Compatibilidade com a versão física e digital</p>
+                <h4>R$ 499,90</h4>
+                <button type="button">Comprar Agora<img src="imagens/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="imagens/controller.png" class="controle">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="imagens/add.png">
+                    <p><small>Adicionar ao carrinho</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links"> 
+            <img src="imagens/fb.png">
+            <img src="imagens/ig.png">
+            <img src="imagens/tw.png">
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "130px"
+            }
+            else{
+                menu.style.maxHeight = "0px"
+            }               
+        }
+    </script>
+</body>
+</html>
